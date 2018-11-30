@@ -20,10 +20,9 @@ public class BonusService {
         }
         if (totalAmount >= blueCardMin) {
             return result = purchaseAmount * bluePointMultiplier / minCost;
-        } else return result = 0;
-
-
+        } else {
+            return result = 0;
+        }
     }
-
 }
 
