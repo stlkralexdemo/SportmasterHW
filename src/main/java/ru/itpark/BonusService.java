@@ -3,7 +3,6 @@ package ru.itpark;
 public class BonusService {
     public int calculateBonus(int purchaseAmount, int totalAmount) {
 
-        int result;
         int goldCardMin = 150_001;
         int silverCardMin = 15_001;
         int blueCardMin = 1;
@@ -11,6 +10,7 @@ public class BonusService {
         int silverPointMultiplier = 70;
         int bluePointMultiplier = 50;
         int minCost = 1000;
+        int result;
 
         if (totalAmount >= goldCardMin) {
             return result = purchaseAmount * goldPointMultiplier / minCost;
