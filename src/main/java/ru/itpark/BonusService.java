@@ -13,14 +13,16 @@ public class BonusService {
         int minCost = 1000;
 
         if (totalAmount >= goldCardMin) {
-            result = purchaseAmount * goldPointMultiplier / minCost;
-        } else if (totalAmount >= silverCardMin) {
-            result = purchaseAmount * silverPointMultiplier / minCost;
-        } else if (totalAmount >= blueCardMin) {
-            result = purchaseAmount * bluePointMultiplier / minCost;
-        } else result = 0;
+            return result = purchaseAmount * goldPointMultiplier / minCost;
+        }
+        if (totalAmount >= silverCardMin) {
+            return result = purchaseAmount * silverPointMultiplier / minCost;
+        }
+        if (totalAmount >= blueCardMin) {
+            return result = purchaseAmount * bluePointMultiplier / minCost;
+        } else return result = 0;
 
-        return result;
+
     }
 
 }
